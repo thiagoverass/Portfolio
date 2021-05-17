@@ -388,6 +388,9 @@ section .title::after{
     margin: 30px 0;
 }
 
+.projects .title::after{
+    content: "College Projects";
+}
 
 .main-wrapper > h2{
     text-align: center;
