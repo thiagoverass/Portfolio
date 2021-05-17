@@ -384,46 +384,58 @@ section .title::after{
 }
 
 /* projects section styling */
-.projects .title::after{
-    content: "College Projects";
+.main-wrapper{
+    margin: 30px 0;
 }
-.projects .carousel .card{
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
+
+
+.main-wrapper > h2{
     text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
+    margin: 45px 0 25px 0;
 }
-.projects .carousel .card:hover{
-    background: #B22222;
-}
-.projects .carousel .card .box{
+
+.article-collection{
     display: flex;
-    flex: 1 1 auto;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
+    width: 96vw;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
-.projects .carousel .card:hover .box{
-    transform: scale(1.05);
+
+article{
+    flex: 0 0 calc(25% - 30px);
+    margin: 10px;
+    box-shadow: 0px 0px 4px -1px rgba(0, 0, 0, 0.75);
 }
-.projects .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
+
+.img-box img{
+    width: 100%;
+    display: block;
 }
-.projects .carousel .card img{
-    height: 350px;
-    width: 350px;
-    object-fit: cover;
-    border: 5px solid #B22222;
-    transition: all 0.3s ease;
+
+.img-box{
+    overflow: hidden;
 }
-.projects .carousel .card:hover img{
-    border-color: #fff;
+
+.text-content{
+    padding: 0 25px;
 }
+
+.text-content h3{
+    padding: 15px 0;
+}
+
+.text-content p{
+    opacity: 0.8;
+    padding: 10px 0 25px 0;
+}
+
+.article-collection article:nth-child(even){
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .owl-dots{
     text-align: center;
     margin-top: 20px;
