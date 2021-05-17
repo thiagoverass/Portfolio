@@ -452,6 +452,7 @@ article{
     border: 2px solid #B22222!important;
     transition: all 0.3s ease;
 }
+
 .owl-dot.active{
     width: 35px;
     border-radius: 14px;
